@@ -28,19 +28,19 @@ To build the Docker image for this application, follow these steps:
 
    ```bash
    docker build -t stsapp:latest .
-This will create a Docker image named stsapp with the latest tag.
+   This will create a Docker image named stsapp with the latest tag.
 
 3. Run the Docker container using the following command:
 
    ```bash
    docker run -p 8000:8000 asifsource/stsapp
-This will map port 8000 of the container to port 8000 on your local machine.
+   This will map port 8000 of the container to port 8000 on your local machine.
 
 4. You can access the application by navigating to:
 
    ```arduino
    http://localhost:8000
-This will trigger the application to return the current timestamp and the IP address of the visitor in a JSON format.
+   This will trigger the application to return the current timestamp and the IP address of the visitor in a JSON format.
 
 ## Troubleshooting
 
