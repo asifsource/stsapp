@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **SimpleTimeService** is a simple microservice that returns the current timestamp and the IP address of the visitor in a JSON format. It is a web server application that can be built and run using Docker. This service is designed to run as a non-root user inside the Docker container.
+The **SimpleTimeService (stsapp)** is a simple microservice that returns the current timestamp and the IP address of the visitor in a JSON format. It is a web server application that can be built and run using Docker. This service is designed to run as a non-root user inside the Docker container.
 
 ## Project Structure
 
