@@ -6,9 +6,9 @@ The **SimpleTimeService (stsapp)** is a simple microservice that returns the cur
 
 ## Project Structure
 
-- **app/**: Contains the source code for the `SimpleTimeService` application.
+- **app/**: Contains the source code (sts.py) for the `SimpleTimeService` application and requirements.txt.
+- **requirements.txt**: Lists of dependencies needed for the application.
 - **Dockerfile**: The configuration file for building the Docker image.
-- **requirements.txt**: Lists any dependencies needed for the application.
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
