@@ -45,14 +45,14 @@ To build the Docker image for this application, follow these steps:
 ## Troubleshooting
 
 1. Port Already in Use:
-   If port 8000 is already in use by another process, change the port mapping in the docker run command.
-   For example:
+      If port 8000 is already in use by another process, change the port mapping in the docker run command.
+      For example:
    ```bash
    docker run -p 8080:8000 asifsource/stsapp
 
 2. Docker Daemon Not Running:
-   Ensure Docker is running on your machine. If Docker is not running, start it and retry the above steps.
+      Ensure Docker is running on your machine. If Docker is not running, start it and retry the above steps.
 
 3. Docker Build Fails:
-   If the build fails, make sure that your Dockerfile and application dependencies (listed in requirements.txt) are correctly configured.
+      If the build fails, make sure that your Dockerfile and application dependencies (listed in requirements.txt) are correctly configured.
  
