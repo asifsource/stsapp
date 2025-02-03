@@ -33,7 +33,7 @@ This will create a Docker image named stsapp with the latest tag.
 3. Run the Docker container using the following command:
 
    ```bash
-docker run -p 8000:8000 asifsource/stsapp
+   docker run -p 8000:8000 asifsource/stsapp
 This will map port 8000 of the container to port 8000 on your local machine.
 
 4. You can access the application by navigating to:
