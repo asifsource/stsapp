@@ -1,7 +1,14 @@
-# stsapp - Dockerized Application
+# SimpleTimeService - Dockerized Microservice
 
-This repository contains a Dockerized application, **stsapp**. The application is structured with an `app` directory and a Dockerfile that allows you to build and run the application inside a container.
+## Overview
 
+The **SimpleTimeService** is a simple microservice that returns the current timestamp and the IP address of the visitor in a JSON format. It is a web server application that can be built and run using Docker. This service is designed to run as a non-root user inside the Docker container.
+
+## Project Structure
+
+- **app/**: Contains the source code for the `SimpleTimeService` application.
+- **Dockerfile**: The configuration file for building the Docker image.
+- **requirements.txt**: Lists any dependencies needed for the application.
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
