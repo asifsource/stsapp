@@ -41,35 +41,35 @@ Before you begin, ensure you have the following installed:
 
 Ensure the following APIs are enabled to prevent Terraform errors:
     
-      gcloud services enable compute.googleapis.com 
-      gcloud services enable run.googleapis.com 
-      gcloud services enable vpcaccess.googleapis.com 
-      gcloud services enable iam.googleapis.com
+    gcloud services enable compute.googleapis.com 
+    gcloud services enable run.googleapis.com 
+    gcloud services enable vpcaccess.googleapis.com 
+    gcloud services enable iam.googleapis.com
 
 
 # Task 1: Building and Running the Docker Container
 
 **1. Clone the Repository**
    
-      git clone https://github.com/asifsource/stsapp.git
-      cd stsapp
+    git clone https://github.com/asifsource/stsapp.git
+    cd stsapp
 
 **2. Build the Docker Image** 
    
-      docker build -t stsapp:latest .
+    docker build -t stsapp:latest .
 
 **3. To push your Docker image on Docker Hub**
    
-      docker push docker.io/asifsource/stsapp:latest
+    docker push docker.io/asifsource/stsapp:latest
 
 **4. Run the Docker Container**
    
-      docker run -p 8000:8000 stsapp:latest
+    docker run -p 8000:8000 stsapp:latest
 
 **5. Access the Service**
    Open your browser and navigate to:
       
-      http://localhost:8000
+    http://localhost:8000
 
 This will return the current timestamp and the IP address of the visitor in a JSON format.
 
@@ -77,7 +77,7 @@ This will return the current timestamp and the IP address of the visitor in a JS
 
 **1. Port Already in Use:**
    
-      docker run -p 8080:8000 stsapp:latest
+    docker run -p 8080:8000 stsapp:latest
 
 **2. Docker Daemon Not Running:** Ensure Docker is running on your machine.
 
@@ -90,8 +90,8 @@ This will return the current timestamp and the IP address of the visitor in a JS
 
 **1. Authenticate to GCP**
    
-      gcloud auth application-default login
-      gcloud config set project YOUR_PROJECT_ID
+    gcloud auth application-default login
+    gcloud config set project YOUR_PROJECT_ID
       
 
 **2. Deploy Infrastructure with Terraform**
