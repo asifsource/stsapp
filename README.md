@@ -96,22 +96,22 @@ This will return the current timestamp and the IP address of the visitor in a JS
 
 **2. Deploy Infrastructure with Terraform**
    
-      cd /terraform
+    cd /terraform
       
 
 **Edit terraform.tfvars with your values**
 
 **3. To format your configuration files into a canonical format and style**
       
-      terraform fmt
+    terraform fmt
 
 **4. initializes a working directory for Terraform**
       
-      terraform init
+    terraform init
 
 **5. To check the syntax and structure of your Terraform configuration files**
       
-      terraform validate
+    terraform validate
 
 
 **6. executes planned actions, creating, updating, or deleting infrastructure resources to match the new state outlined in your IaC**
@@ -121,11 +121,11 @@ This will return the current timestamp and the IP address of the visitor in a JS
 
 **7. Access the Service**
    
-      curl http://(terraform output -raw load_balancer_ip)
+    curl http://(terraform output -raw load_balancer_ip)
 
 **5. Cleanup**
    
-      terraform destroy 
+    terraform destroy 
 
 
 ## Key Success Metrics
