@@ -123,6 +123,11 @@ This will return the current timestamp and the IP address of the visitor in a JS
    
     curl http://(terraform output -raw load_balancer_ip)
 
+
+**Note**
+If you are not able to see json output after this step then wait for couple of minutes, then try to access the page with the help of output load balancer ip.
+
+
 **5. Cleanup**
    
     terraform destroy 
