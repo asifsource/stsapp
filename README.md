@@ -23,8 +23,6 @@ stsapp/  # Parent directory
 ...............└── terraform.tfvars
     
 ...............└── outputs.tf
-    
-...............└── provider.tf 
 
 ├── .gitignore            # Ignore secrets/logs
 
