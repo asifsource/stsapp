@@ -102,7 +102,6 @@ This will return the current timestamp and the IP address of the visitor in a JS
 **3. Deploy Infrastructure with Terraform**
    
       cd /terraform
-      cp terraform.tfvars.example terraform.tfvars
 
 **Edit terraform.tfvars with your values**
 
@@ -139,33 +138,6 @@ This will return the current timestamp and the IP address of the visitor in a JS
 
 ✅ Code quality: Variables, comments, and modular structure in Terraform files.
 
-
-# Terraform Best Practices
-
-**`variables.tf`**
-   
-      variable "project_id" {
-        description = "GCP Project ID"
-        type        = string
-      }
-
-      variable "region" {
-        description = "GCP region (e.g., us-central1)"
-        type        = string
-        default     = "us-central1"
-      }
-
-      variable "container_image" {
-        description = "Container image URL (e.g., docker.io/asifsource/stsapp:latest)"
-        type        = string
-      }
-
-
-**`terraform.tfvars.example`**
-   
-      project_id      = "your-gcp-project-id"
-      region          = "us-central1" (Choose as per requirements)
-      container_image = "docker.io/asifsource/stsapp:latest"
 
 # GitHub
 
