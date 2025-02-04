@@ -92,30 +92,32 @@ This will return the current timestamp and the IP address of the visitor in a JS
    
       gcloud auth application-default login
       gcloud config set project YOUR_PROJECT_ID
+      
 
-**2. Build and Push the Container**
-   
-      cd sts/
-      docker build -t stsapp:latest . 
-      docker push asifsource//stsapp:latest
-
-**3. Deploy Infrastructure with Terraform**
+**2. Deploy Infrastructure with Terraform**
    
       cd /terraform
+      
 
 **Edit terraform.tfvars with your values**
 
-**4. To format your configuration files into a canonical format and style**
+**3. To format your configuration files into a canonical format and style**
       
       terraform fmt
 
-**5. initializes a working directory for Terraform**
+**4. initializes a working directory for Terraform**
       
       terraform init
 
-**6. To check the syntax and structure of your Terraform configuration files**
+**5. To check the syntax and structure of your Terraform configuration files**
       
-      terraform apply
+      terraform validate
+
+
+**6. executes planned actions, creating, updating, or deleting infrastructure resources to match the new state outlined in your IaC**
+    
+    terraform apply
+    
 
 **7. Access the Service**
    
@@ -137,35 +139,3 @@ This will return the current timestamp and the IP address of the visitor in a JS
 ✅ All variables are configurable in terraform.tfvars.
 
 ✅ Code quality: Variables, comments, and modular structure in Terraform files.
-
-
-# GitHub
-
-**1. Push to GitHub**
-
-    # Initialize Git
-    git init
-    git add .
-    git commit -m "Initial commit: SimpleTimeService app and Terraform config"
-
-**2. Create a new GitHub repo (https://github.com/new) and push**
-    
-    git remote add origin https://github.com/yourusername/simple-time-service.git
-    git branch -M main
-    git push -u origin main
-
-# Validate Collaboration Workflow
-
-1. Clone the repo.
-2. Follow the README steps.
-3. Run terraform apply and verify:
-
-   * Infrastructure is created in your GCP project.
-   
-   * The service responds at the load balancer IP.
-
-# Final Checklist
-
-1. Test terraform plan/apply in a fresh clone.
-2. Ensure the README includes all authentication steps.
-3. Delete local terraform.tfvars (only keep the example file).  
