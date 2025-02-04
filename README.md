@@ -88,7 +88,7 @@ This will return the current timestamp and the IP address of the visitor in a JS
 # Task 2: Deploying to GCP using Terraform
 
 
-**1. Authenticate to GCP**
+**1. Authenticate to GCP and set your project for deployment**
    
     gcloud auth application-default login
     gcloud config set project YOUR_PROJECT_ID
