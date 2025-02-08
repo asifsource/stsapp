@@ -1,7 +1,7 @@
 # SimpleTimeService - Dockerized Microservice & GCP Deployment
 
 ## Overview
-This project sets up a cloud-based time service using Google Cloud Run, a VPC with private and public subnets, and a global HTTP load balancer. The containerized application is pulled from Docker Hub (docker.io/asifsource/stsapp:latest) and deployed using Terraform..
+This project sets up a cloud-based time service using Google Cloud Run, a VPC with private and public subnets, and a global HTTP load balancer. The containerized application is pulled from Docker Hub and deployed using Terraform..
 
 ## Project Structure
 stsapp/  # Parent directory
